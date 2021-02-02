@@ -1,0 +1,10 @@
+/* your styles go here */
+#myVideo {
+    min-width: 98.9vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-top: -8rem; */
+    z-index: -1;
+  }
