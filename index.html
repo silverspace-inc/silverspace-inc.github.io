@@ -1,138 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Silverspace Technologies</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- <section style="background: url(img/beach.jpg)" class="page-holder position-relative d-flex justify-content-between flex-column"> -->
+      <video autoplay muted loop playsinline id="myVideo" src="./img/future.mp4"></video>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <div class="overlay"></div>
+      <div class="container position-relative pt-3">
 
-  <title>Silverspace Technologies Inc</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/logo.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: WeBuild - v2.2.1
-  * Template URL: https://bootstrapmade.com/free-bootstrap-coming-soon-template-countdwon/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container-fluid">
-
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html">
-          <img src="./assets/img/logo.png" alt="Silverspace Technologies. ">
-        </a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <!-- <ul class="list-inline text-center">
+          <li class="list-inline-item"><a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul> -->
       </div>
-
-      <div class="contact-link float-right">
-        <a href="#contact" class="scrollto">Contact Us</a>
-      </div>
-
-    </div>
-  </header><!-- End #header -->
-
-  <!-- ======= Hero Section ======= -->
-  
-  
-  <section id="hero">
-    <video autoplay muted loop playsinline id="myVideo" src="./assets/img/future.mp4">
-    </video>
-    <div class="hero-container">
-      <h1>Silverspace Technologies</h1>
-      <h2>We're working hard to improve our website and we'll ready to launch after</h2>
-      <div class="countdown" data-count="2021/02/09" data-template="%d days <br> %H:%M:%S"></div>
-      <button class="btn btn-primary">
-        <a href="mailto:msoni@silverspaceinc.com" class="contact-link" style="color:#fff;">
-          Get In Touch
-        </a>
-      </button>
-    </div>
-  </section>
-  <!-- </section> -->
-
-  <main id="main">
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact Us</h2>
-        </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-6">
-            <div class="contact-address">
-              <i class="icofont-google-map"></i>
-              <h3>Address</h3>
-              <address>2416 South Holden Rd, Greensboro, NC 27407, USA</address>
+      <div class="container text-center text-white position-relative mt-4 mb-5 pb-4">
+        <h1 class="text-shadow mb-5 text-uppercase"><a href="index.html">
+          <img src="./img/logo.png" alt="Silverspace Technologies. " style="max-width: 25vw;">
+</a></h1>
+        <p class="h3 text-shadow text-uppercase">We are still tweaking few details, stay tuned!</p>
+        <div id="countdown" class="countdown mt-5">
+          <div class="row">
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-days" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">days</p>
             </div>
-          </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-hours" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">hours</p>
+  </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-minutes" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">minutes</p>
+ </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-seconds" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">seconds</p>
 
-          <!-- <div class="col-md-4"> -->
-            <!-- <div class="contact-phone">
-              <i class="icofont-phone"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+1">+1 </a></p>
-            </div>
-          </div> -->
-
-          <div class="col-md-6">
-            <div class="contact-email">
-              <i class="icofont-envelope"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:msoni@silverspaceinc.com">msoni@silverspaceinc.com</a></p>
-            </div>
+</div>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Contact Us Section -->
+      <div class="container text-white position-relative text-center mb-5 pb-5">
+        <!-- <p class="h3 mb-4 text-shadow font-weight-normal">Join our mailing list and we will let you know all the news!</p> -->
+        <div class="row">
+          <div class="col mx-auto my-auto">
+            <form class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center">
+              <!-- <div class="input-group shadow"> -->
+                <!-- <input id="inlineFormInputName2" type="email" placeholder="JaneDoe@example.com" class="form-control"> -->
+                <div class="input-group-append justify-content-center">
+                  <button type="submit" class="btn btn-primary mb-2"><a href="mailto:msoni@silverspaceinc.com" class="contact-link" style="color:#fff;">
+                    Get In Touch
+                  </a></button>
+                </div>
+              <!-- </div> -->
+            </form>
+          </div>
+        </div>
 
-  </main><!-- End #main -->
+ </div>
+      <footer class="py-4 position-relative w-100 fixed-bottom" >
+        <div class="container">
+          <div class="row">
+            <div class="col text-center text-lg">
+              <p class="text-small mb-1"><a href="#" class="text-white" style="color: #999!important;">All Rights Reserved.<br/>© Silverspace Teachnologies Inc.</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-countdown/jquery.countdown.min.js"></script>
+    <script src="vendor/moment/min/moment.min.js"></script>
+    <script src="js/front.js"></script>
+    <script>
+      // From the following config, you can set the final date.
+      config = {
+          countdown: {
+              year: 2021,
+              month: 2,
+              day: 9,
+              hour: 12,
+              minute: 12,
+              second: 00
+          }
+      };
+      // and now we init the countdown
+      $(function () {
+          countdown();
+      }); 
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Silverspace Technologies Inc.</span></strong> All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End #footer -->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-countdown/jquery.countdown.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html> 
